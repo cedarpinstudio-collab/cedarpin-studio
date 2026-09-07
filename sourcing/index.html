@@ -11,8 +11,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Arial,sans-serif}
 a{text-decoration:none;color:inherit} .shell{width:min(1180px,calc(100% - 30px));margin:auto}
 .top{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900}
-.brand img{width:54px;height:54px;object-fit:contain}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900}.brandmark{width:54px;height:54px;flex:none}
 .nav{display:flex;gap:22px;font-size:14px;color:var(--muted)}
 .btn{border:0;background:var(--green);color:white;padding:13px 18px;border-radius:12px;font-weight:800;cursor:pointer}
 .hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:34px;align-items:start;padding:32px 0 28px}
@@ -41,7 +40,7 @@ a{text-decoration:none;color:inherit} .shell{width:min(1180px,calc(100% - 30px))
 @keyframes move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes moveback{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 .trust{background:var(--dark);color:white;border-radius:24px;padding:30px;margin:12px auto 50px;display:grid;grid-template-columns:1fr 1fr;gap:30px} .trust p{color:#b9c8c1} .trust ul{margin:0;padding-left:18px} .trust li{margin:8px 0}
-footer{padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center} footer img{width:70px;height:70px;object-fit:contain}
+footer{padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center} footer .brandmark{width:64px;height:64px}
 .mobilebar{display:none}
 @media(max-width:880px){.nav{display:none}.hero{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr}.hero-copy{padding-top:0}}
 @media(max-width:560px){.top .btn{display:none}.grid,.steps{grid-template-columns:1fr}.f.full{grid-column:auto}.hero h1{font-size:46px}.tile{width:220px;height:145px}.mobilebar{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:9}.mobilebar a{display:block;text-align:center;background:var(--green);color:white;padding:14px;border-radius:14px;font-weight:900;box-shadow:0 8px 24px #0003}body{padding-bottom:70px}}
@@ -49,7 +48,7 @@ footer{padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 </head>
 <body>
 <header class="shell top">
-  <a class="brand" href="../"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAEeCAYAAAC6ZjWeAAAgAElEQVR42uy9B5hcdZX//6+z..." alt="CedarPin Sourcing logo"><span>CedarPin Sourcing</span></a>
+  <a class="brand" href="../"><svg class="brandmark" viewBox="0 0 72 72" aria-label="CedarPin Sourcing logo" role="img"><circle cx="36" cy="36" r="34" fill="#0b1c16"/><path d="M36 10 25 26h7l-12 14h10l-13 16h19V10Z" fill="#0e6b4f"/><path d="M36 10 47 26h-7l12 14H42l13 16H36V10Z" fill="#0e6b4f"/><rect x="24" y="42" width="24" height="17" rx="3" fill="#d9f36a"/><path d="M24 47 36 53 48 47M36 53v6" stroke="#0b1c16" stroke-width="2" fill="none"/><path d="M15 53c8 9 31 10 42 0" stroke="#d9f36a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="m54 50 7 2-5 5" fill="#d9f36a"/></svg><span>CedarPin Sourcing</span></a>
   <nav class="nav"><a href="#how">How it works</a><a href="#ideas">Product ideas</a><a href="#request">Request</a></nav>
   <a class="btn" href="#request">Start a request</a>
 </header>
@@ -141,7 +140,7 @@ footer{padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 </section>
 </main>
 
-<footer class="shell"><div style="display:flex;align-items:center;gap:10px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAEeCAYAAAC6ZjWeAAAgAElEQVR42uy9B5hcdZX//6+z..." alt="CedarPin Sourcing logo"><span>CedarPin Product Sourcing</span></div><span>Independent sourcing research · International</span></footer>
+<footer class="shell"><div style="display:flex;align-items:center;gap:10px"><svg class="brandmark" viewBox="0 0 72 72" aria-label="CedarPin Sourcing logo" role="img"><circle cx="36" cy="36" r="34" fill="#0b1c16"/><path d="M36 10 25 26h7l-12 14h10l-13 16h19V10Z" fill="#0e6b4f"/><path d="M36 10 47 26h-7l12 14H42l13 16H36V10Z" fill="#0e6b4f"/><rect x="24" y="42" width="24" height="17" rx="3" fill="#d9f36a"/><path d="M24 47 36 53 48 47M36 53v6" stroke="#0b1c16" stroke-width="2" fill="none"/><path d="M15 53c8 9 31 10 42 0" stroke="#d9f36a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="m54 50 7 2-5 5" fill="#d9f36a"/></svg><span>CedarPin Product Sourcing</span></div><span>Independent sourcing research · International</span></footer>
 <div class="mobilebar"><a href="#request">Start product request</a></div>
 <script>document.getElementById('sourcingForm').addEventListener('submit',function(e){e.preventDefault();if(!this.reportValidity())return;document.getElementById('success').style.display='block';});</script>
 </body></html>
