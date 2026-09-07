@@ -7,140 +7,15 @@
 <meta name="description" content="Product sourcing research for retailers, workshops and online sellers.">
 <style>
 :root{--bg:#f5f8f6;--card:#fff;--ink:#10231c;--muted:#64756e;--green:#0e6b4f;--lime:#d9f36a;--line:#dce6e1;--dark:#0b1c16}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Arial,sans-serif}
-a{text-decoration:none;color:inherit} .shell{width:min(1180px,calc(100% - 30px));margin:auto}
-.top{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900}.brandmark{width:54px;height:54px;flex:none}
-.nav{display:flex;gap:22px;font-size:14px;color:var(--muted)}
-.btn{border:0;background:var(--green);color:white;padding:13px 18px;border-radius:12px;font-weight:800;cursor:pointer}
-.hero{display:grid;grid-template-columns:.92fr 1.08fr;gap:34px;align-items:start;padding:32px 0 28px}
-.hero-copy{padding:22px 4px 0}
-.hero h1{font-size:clamp(42px,6vw,70px);line-height:.98;letter-spacing:-.045em;margin:14px 0 18px}
-.hero h1 span{color:var(--green)} .lead{font-size:19px;color:var(--muted);max-width:650px}
-.quick{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}
-.pill{background:#e8f2ed;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:13px}
-.request-side{display:grid;gap:14px}
-.hero-image{height:220px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 40px #0d342614;background:#fff}
-.hero-image img{width:100%;height:100%;object-fit:cover}
-.formbox{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 18px 50px #0d342619}
-.formbox h2{margin:0 0 4px;font-size:25px} .formbox p{margin:0 0 18px;color:var(--muted);font-size:14px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px} .f.full{grid-column:1/-1}
-.f label{display:block;font-size:11px;font-weight:900;margin:0 0 5px}
-.f input,.f textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:#fbfdfc}
-.f textarea{min-height:82px;resize:vertical} .submit{width:100%;margin-top:12px;padding:14px;border:0;border-radius:12px;background:var(--dark);color:white;font-weight:900;cursor:pointer}
-.note{font-size:11px!important;margin-top:8px!important} .success{display:none;margin-top:10px;background:#edf8ef;border:1px solid #c3dfc9;color:#23582e;padding:10px;border-radius:10px}
-.how{padding:48px 0} .how h2,.galleryhead h2{font-size:38px;letter-spacing:-.03em;margin:0 0 8px} .how p,.galleryhead p{color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px} .step{background:white;border:1px solid var(--line);border-radius:16px;padding:20px}
-.num{width:30px;height:30px;border-radius:9px;background:var(--lime);display:grid;place-items:center;font-weight:900} .step h3{margin:14px 0 6px} .step p{font-size:14px;margin:0}
-.gallery{padding:22px 0 58px;overflow:hidden} .galleryhead{margin-bottom:18px}
-.lane{overflow:hidden;margin:12px 0} .track{display:flex;gap:14px;width:max-content;animation:move 34s linear infinite} .lane.reverse .track{animation:moveback 38s linear infinite}
-.tile{width:270px;height:175px;border-radius:18px;overflow:hidden;position:relative;flex:none;border:1px solid var(--line);background:white}
-.tile img{width:100%;height:100%;object-fit:cover} .tile b{position:absolute;left:10px;bottom:10px;background:#0b1c16dd;color:white;padding:7px 10px;border-radius:9px;font-size:12px}
-@keyframes move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes moveback{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-.trust{background:var(--dark);color:white;border-radius:24px;padding:30px;margin:12px auto 50px;display:grid;grid-template-columns:1fr 1fr;gap:30px} .trust p{color:#b9c8c1} .trust ul{margin:0;padding-left:18px} .trust li{margin:8px 0}
-footer{padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center} footer .brandmark{width:64px;height:64px}
-.mobilebar{display:none}
-@media(max-width:880px){.nav{display:none}.hero{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr}.hero-copy{padding-top:0}}
-@media(max-width:560px){.top .btn{display:none}.grid,.steps{grid-template-columns:1fr}.f.full{grid-column:auto}.hero h1{font-size:46px}.tile{width:220px;height:145px}.mobilebar{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:9}.mobilebar a{display:block;text-align:center;background:var(--green);color:white;padding:14px;border-radius:14px;font-weight:900;box-shadow:0 8px 24px #0003}body{padding-bottom:70px}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Arial,sans-serif}a{text-decoration:none;color:inherit}.shell{width:min(1180px,calc(100% - 30px));margin:auto}.top{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.logo{width:54px;height:54px;flex:none}.nav{display:flex;gap:22px;font-size:14px;color:var(--muted)}.btn{border:0;background:var(--green);color:white;padding:13px 18px;border-radius:12px;font-weight:800;cursor:pointer}.hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start;padding:30px 0}.hero-copy{padding:22px 4px 0}.hero h1{font-size:clamp(42px,6vw,70px);line-height:.98;letter-spacing:-.045em;margin:14px 0 18px}.hero h1 span{color:var(--green)}.lead{font-size:19px;color:var(--muted);max-width:650px}.quick{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.pill{background:#e8f2ed;border:1px solid var(--line);padding:8px 11px;border-radius:999px;font-size:13px}.request-side{display:grid;gap:14px}.hero-image{height:250px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 40px #0d342614;background:#fff}.hero-image img{width:100%;height:100%;object-fit:cover;object-position:center}.formbox{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 18px 50px #0d342619}.formbox h2{margin:0 0 4px;font-size:25px}.formbox p{margin:0 0 18px;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.f.full{grid-column:1/-1}.f label{display:block;font-size:11px;font-weight:900;margin:0 0 5px}.f input,.f textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:#fbfdfc}.f textarea{min-height:82px;resize:vertical}.submit{width:100%;margin-top:12px;padding:14px;border:0;border-radius:12px;background:var(--dark);color:white;font-weight:900;cursor:pointer}.note{font-size:11px!important;margin-top:8px!important}.success{display:none;margin-top:10px;background:#edf8ef;border:1px solid #c3dfc9;color:#23582e;padding:10px;border-radius:10px}.how{padding:48px 0}.how h2,.galleryhead h2{font-size:38px;letter-spacing:-.03em;margin:0 0 8px}.how p,.galleryhead p{color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.step{background:white;border:1px solid var(--line);border-radius:16px;padding:20px}.num{width:30px;height:30px;border-radius:9px;background:var(--lime);display:grid;place-items:center;font-weight:900}.step h3{margin:14px 0 6px}.step p{font-size:14px;margin:0}.gallery{padding:22px 0 58px;overflow:hidden}.galleryhead{margin-bottom:18px}.lane{overflow:hidden;margin:12px 0}.track{display:flex;gap:14px;width:max-content;animation:move 34s linear infinite}.lane.reverse .track{animation:moveback 38s linear infinite}.tile{width:270px;height:175px;border-radius:18px;overflow:hidden;position:relative;flex:none;border:1px solid var(--line);background:#ddd center/cover no-repeat}.tile b{position:absolute;left:10px;bottom:10px;background:#0b1c16dd;color:white;padding:7px 10px;border-radius:9px;font-size:12px}.p1{background-position:15% 58%;background-size:235%}.p2{background-position:42% 42%;background-size:245%}.p3{background-position:31% 92%;background-size:250%}.p4{background-position:69% 55%;background-size:245%}.p5{background-position:62% 92%;background-size:250%}.p6{background-position:83% 56%;background-size:250%}.p7{background-position:76% 91%;background-size:250%}.p8{background-position:92% 88%;background-size:260%}@keyframes move{from{transform:translateX(0)}to{transform:translateX(-50%)}}@keyframes moveback{from{transform:translateX(-50%)}to{transform:translateX(0)}}.trust{background:var(--dark);color:white;border-radius:24px;padding:30px;margin:12px auto 50px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.trust p{color:#b9c8c1}.trust ul{margin:0;padding-left:18px}.trust li{margin:8px 0}footer{padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}.mobilebar{display:none}@media(max-width:880px){.nav{display:none}.hero{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr}.hero-copy{padding-top:0}}@media(max-width:560px){.top .btn{display:none}.grid,.steps{grid-template-columns:1fr}.f.full{grid-column:auto}.hero h1{font-size:46px}.tile{width:220px;height:145px}.mobilebar{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:9}.mobilebar a{display:block;text-align:center;background:var(--green);color:white;padding:14px;border-radius:14px;font-weight:900;box-shadow:0 8px 24px #0003}body{padding-bottom:70px}}
 </style>
 </head>
 <body>
-<header class="shell top">
-  <a class="brand" href="../"><svg class="brandmark" viewBox="0 0 72 72" aria-label="CedarPin Sourcing logo" role="img"><circle cx="36" cy="36" r="34" fill="#0b1c16"/><path d="M36 10 25 26h7l-12 14h10l-13 16h19V10Z" fill="#0e6b4f"/><path d="M36 10 47 26h-7l12 14H42l13 16H36V10Z" fill="#0e6b4f"/><rect x="24" y="42" width="24" height="17" rx="3" fill="#d9f36a"/><path d="M24 47 36 53 48 47M36 53v6" stroke="#0b1c16" stroke-width="2" fill="none"/><path d="M15 53c8 9 31 10 42 0" stroke="#d9f36a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="m54 50 7 2-5 5" fill="#d9f36a"/></svg><span>CedarPin Sourcing</span></a>
-  <nav class="nav"><a href="#how">How it works</a><a href="#ideas">Product ideas</a><a href="#request">Request</a></nav>
-  <a class="btn" href="#request">Start a request</a>
-</header>
-
+<header class="shell top"><a class="brand" href="../"><svg class="logo" viewBox="0 0 90 90" role="img" aria-label="CedarPin Sourcing logo"><circle cx="45" cy="45" r="42" fill="#0b1c16"/><path d="M45 11 33 28h8L28 43h10L24 58h42L52 43h10L49 28h8Z" fill="#0e6b4f"/><rect x="31" y="49" width="28" height="20" rx="4" fill="#d9f36a"/><path d="M31 54 45 61 59 54M45 61v8" stroke="#0b1c16" stroke-width="2.5" fill="none"/><path d="M21 66c14 10 35 10 49 1" stroke="#d9f36a" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="m67 62 8 4-7 5" fill="#d9f36a"/></svg><span>CedarPin Sourcing</span></a><nav class="nav"><a href="#how">How it works</a><a href="#ideas">Product ideas</a><a href="#request">Request</a></nav><a class="btn" href="#request">Start a request</a></header>
 <main>
-<section class="shell hero">
-  <div class="hero-copy">
-    <div class="pill" style="display:inline-block">Free first product search</div>
-    <h1>Find products.<br><span>Compare suppliers.</span><br>Buy smarter.</h1>
-    <p class="lead">Tell us the product, quantity and destination. We research relevant supplier options, MOQ, price ranges and the questions you should ask before buying.</p>
-    <div class="quick"><span class="pill">Motorcycle parts</span><span class="pill">Phones</span><span class="pill">Electronics</span><span class="pill">Tools</span><span class="pill">Car accessories</span><span class="pill">Home products</span></div>
-  </div>
-
-  <div class="request-side">
-    <div class="hero-image">
-      <img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/669726f128581a2b9aa1daff_image_1dd9a84b_1720808627942_1024.jpeg" alt="Mixed electronics and online products">
-    </div>
-    <div class="formbox" id="request">
-      <h2>What are you looking for?</h2>
-      <p>It takes about one minute. No payment here.</p>
-      <form id="sourcingForm">
-        <div class="grid">
-          <div class="f"><label>YOUR NAME *</label><input name="name" required placeholder="Your name"></div>
-          <div class="f"><label>BUSINESS / SHOP *</label><input name="business" required placeholder="Shop or company"></div>
-          <div class="f"><label>PHONE / WHATSAPP *</label><input name="phone" required placeholder="+961 ..."></div>
-          <div class="f"><label>DESTINATION *</label><input name="country" required placeholder="Lebanon, UAE, UK..."></div>
-          <div class="f full"><label>PRODUCT OR LINK *</label><input name="product" required placeholder="Product, model, part number or link"></div>
-          <div class="f"><label>QUANTITY *</label><input name="quantity" required placeholder="50 / 100 / 500"></div>
-          <div class="f"><label>TARGET PRICE</label><input name="budget" placeholder="Optional"></div>
-          <div class="f full"><label>NOTES / SPECS</label><textarea name="specs" placeholder="Size, voltage, material, color, packaging, logo, quality..."></textarea></div>
-        </div>
-        <button class="submit" type="submit">Submit product request</button>
-        <div class="success" id="success"><b>Request captured in this test version.</b><br>Live delivery/notification connection is the next step.</div>
-        <p class="note">No supplier purchase or payment happens through this form.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section class="shell how" id="how">
-  <h2>Simple from the first click.</h2><p>You send the request. We organize the research.</p>
-  <div class="steps">
-    <div class="step"><span class="num">1</span><h3>Send the product</h3><p>Name, photo, part number or link.</p></div>
-    <div class="step"><span class="num">2</span><h3>Set quantity</h3><p>Tell us how many and where it needs to go.</p></div>
-    <div class="step"><span class="num">3</span><h3>We research</h3><p>Supplier fit, MOQ, pricing and key questions.</p></div>
-    <div class="step"><span class="num">4</span><h3>You decide</h3><p>You review the options before any purchase.</p></div>
-  </div>
-</section>
-
-<section class="gallery" id="ideas">
-  <div class="shell galleryhead"><h2>Almost anything worth sourcing.</h2><p>Different categories, different suppliers, one simple request.</p></div>
-
-  <div class="lane"><div class="track">
-    <div class="tile"><img src="https://s.alicdn.com/%40sc04/kf/Hee25cbaa45864d17b15ff4a619560894A/Premium-Quality-Ohlins-Motorcycle-Suspension-Shock-Absorbers-STX46-300mm-for-KTM-Duke-390-2014-2021.jpg" alt="Motorcycle parts"><b>Motorcycle parts</b></div>
-    <div class="tile"><img src="https://cdn.inmoto.it/images/2022/08/02/125648060-98e237a4-d655-4f01-a0d4-c2cc63263944.jpg" alt="Motorcycle"><b>Motorcycles & accessories</b></div>
-    <div class="tile"><img src="https://images.unsplash.com/photo-1738073241111-aa60889ce745?auto=format&fit=crop&w=900&q=80" alt="Smartphone"><b>Phones & mobile</b></div>
-    <div class="tile"><img src="https://www.ultratouch.co.in/uploaded-files/blog/images/reliable-power-tools-manufacturers-for-hardware-businesses-in-india69aa77987432d.webp" alt="Power tools"><b>Power tools</b></div>
-    <div class="tile"><img src="https://soundtech.co.za/cdn/shop/collections/f2c47f96-2b56-4294-9507-5810fcfe1900.png?v=1774445082" alt="Phone accessories"><b>Phone accessories</b></div>
-    <div class="tile"><img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/669726f128581a2b9aa1daff_image_1dd9a84b_1720808627942_1024.jpeg" alt="Electronics"><b>Electronics</b></div>
-
-    <div class="tile"><img src="https://s.alicdn.com/%40sc04/kf/Hee25cbaa45864d17b15ff4a619560894A/Premium-Quality-Ohlins-Motorcycle-Suspension-Shock-Absorbers-STX46-300mm-for-KTM-Duke-390-2014-2021.jpg" alt="Motorcycle parts"><b>Motorcycle parts</b></div>
-    <div class="tile"><img src="https://cdn.inmoto.it/images/2022/08/02/125648060-98e237a4-d655-4f01-a0d4-c2cc63263944.jpg" alt="Motorcycle"><b>Motorcycles & accessories</b></div>
-    <div class="tile"><img src="https://images.unsplash.com/photo-1738073241111-aa60889ce745?auto=format&fit=crop&w=900&q=80" alt="Smartphone"><b>Phones & mobile</b></div>
-    <div class="tile"><img src="https://www.ultratouch.co.in/uploaded-files/blog/images/reliable-power-tools-manufacturers-for-hardware-businesses-in-india69aa77987432d.webp" alt="Power tools"><b>Power tools</b></div>
-    <div class="tile"><img src="https://soundtech.co.za/cdn/shop/collections/f2c47f96-2b56-4294-9507-5810fcfe1900.png?v=1774445082" alt="Phone accessories"><b>Phone accessories</b></div>
-    <div class="tile"><img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/669726f128581a2b9aa1daff_image_1dd9a84b_1720808627942_1024.jpeg" alt="Electronics"><b>Electronics</b></div>
-  </div></div>
-
-  <div class="lane reverse"><div class="track">
-    <div class="tile"><img src="https://files.logoscdn.com/v1/files/33289305/assets/7470922/content.jpg?download=true" alt="Hand tools"><b>Hand tools</b></div>
-    <div class="tile"><img src="https://images.unsplash.com/photo-1754666104636-bd983a5ad660?auto=format&fit=crop&w=900&q=80" alt="Workshop tools"><b>Workshop equipment</b></div>
-    <div class="tile"><img src="https://images.unsplash.com/photo-1765516469356-c18ec65a5745?auto=format&fit=crop&w=900&q=80" alt="Accessories"><b>Online-selling products</b></div>
-    <div class="tile"><img src="https://soundtech.co.za/cdn/shop/collections/f2c47f96-2b56-4294-9507-5810fcfe1900.png?v=1774445082" alt="Electronics accessories"><b>Chargers & accessories</b></div>
-    <div class="tile"><img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/669726f128581a2b9aa1daff_image_1dd9a84b_1720808627942_1024.jpeg" alt="Consumer electronics"><b>Consumer electronics</b></div>
-    <div class="tile"><img src="https://s.alicdn.com/%40sc04/kf/Hee25cbaa45864d17b15ff4a619560894A/Premium-Quality-Ohlins-Motorcycle-Suspension-Shock-Absorbers-STX46-300mm-for-KTM-Duke-390-2014-2021.jpg" alt="Motorcycle accessories"><b>Moto accessories</b></div>
-
-    <div class="tile"><img src="https://files.logoscdn.com/v1/files/33289305/assets/7470922/content.jpg?download=true" alt="Hand tools"><b>Hand tools</b></div>
-    <div class="tile"><img src="https://images.unsplash.com/photo-1754666104636-bd983a5ad660?auto=format&fit=crop&w=900&q=80" alt="Workshop tools"><b>Workshop equipment</b></div>
-    <div class="tile"><img src="https://images.unsplash.com/photo-1765516469356-c18ec65a5745?auto=format&fit=crop&w=900&q=80" alt="Accessories"><b>Online-selling products</b></div>
-    <div class="tile"><img src="https://soundtech.co.za/cdn/shop/collections/f2c47f96-2b56-4294-9507-5810fcfe1900.png?v=1774445082" alt="Electronics accessories"><b>Chargers & accessories</b></div>
-    <div class="tile"><img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/669726f128581a2b9aa1daff_image_1dd9a84b_1720808627942_1024.jpeg" alt="Consumer electronics"><b>Consumer electronics</b></div>
-    <div class="tile"><img src="https://s.alicdn.com/%40sc04/kf/Hee25cbaa45864d17b15ff4a619560894A/Premium-Quality-Ohlins-Motorcycle-Suspension-Shock-Absorbers-STX46-300mm-for-KTM-Duke-390-2014-2021.jpg" alt="Motorcycle accessories"><b>Moto accessories</b></div>
-  </div></div>
-</section>
-
-<section class="shell trust">
-  <div><h2>Research first. Purchase second.</h2><p>CedarPin is an independent product-sourcing research service. We help organize supplier options and information; we are not the factory, freight forwarder or customs broker.</p></div>
-  <ul><li>Compare MOQ and price ranges</li><li>Flag missing supplier information</li><li>Organize specs and shipping questions</li><li>No purchase without your decision</li></ul>
-</section>
-</main>
-
-<footer class="shell"><div style="display:flex;align-items:center;gap:10px"><svg class="brandmark" viewBox="0 0 72 72" aria-label="CedarPin Sourcing logo" role="img"><circle cx="36" cy="36" r="34" fill="#0b1c16"/><path d="M36 10 25 26h7l-12 14h10l-13 16h19V10Z" fill="#0e6b4f"/><path d="M36 10 47 26h-7l12 14H42l13 16H36V10Z" fill="#0e6b4f"/><rect x="24" y="42" width="24" height="17" rx="3" fill="#d9f36a"/><path d="M24 47 36 53 48 47M36 53v6" stroke="#0b1c16" stroke-width="2" fill="none"/><path d="M15 53c8 9 31 10 42 0" stroke="#d9f36a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="m54 50 7 2-5 5" fill="#d9f36a"/></svg><span>CedarPin Product Sourcing</span></div><span>Independent sourcing research · International</span></footer>
-<div class="mobilebar"><a href="#request">Start product request</a></div>
-<script>document.getElementById('sourcingForm').addEventListener('submit',function(e){e.preventDefault();if(!this.reportValidity())return;document.getElementById('success').style.display='block';});</script>
-</body></html>
+<section class="shell hero"><div class="hero-copy"><div class="pill" style="display:inline-block">Free first product search</div><h1>Find products.<br><span>Compare suppliers.</span><br>Buy smarter.</h1><p class="lead">Tell us the product, quantity and destination. We research relevant supplier options, MOQ, price ranges and the questions you should ask before buying.</p><div class="quick"><span class="pill">Motorcycle parts</span><span class="pill">Phones</span><span class="pill">Electronics</span><span class="pill">Tools</span><span class="pill">Car accessories</span><span class="pill">Home products</span></div></div>
+<div class="request-side"><div class="hero-image"><img src=""+hero_uri+"" alt="Mixed sourcing products including motorcycles, tools, phones, electronics and accessories"></div><div class="formbox" id="request"><h2>What are you looking for?</h2><p>It takes about one minute. No payment here.</p><form id="sourcingForm"><div class="grid"><div class="f"><label>YOUR NAME *</label><input name="name" required placeholder="Your name"></div><div class="f"><label>BUSINESS / SHOP *</label><input name="business" required placeholder="Shop or company"></div><div class="f"><label>PHONE / WHATSAPP *</label><input name="phone" required placeholder="+961 ..."></div><div class="f"><label>DESTINATION *</label><input name="country" required placeholder="Lebanon, UAE, UK..."></div><div class="f full"><label>PRODUCT OR LINK *</label><input name="product" required placeholder="Product, model, part number or link"></div><div class="f"><label>QUANTITY *</label><input name="quantity" required placeholder="50 / 100 / 500"></div><div class="f"><label>TARGET PRICE</label><input name="budget" placeholder="Optional"></div><div class="f full"><label>NOTES / SPECS</label><textarea name="specs" placeholder="Size, voltage, material, color, packaging, logo, quality..."></textarea></div></div><button class="submit" type="submit">Submit product request</button><div class="success" id="success"><b>Request captured in this test version.</b><br>Live delivery/notification connection is the next step.</div><p class="note">No supplier purchase or payment happens through this form.</p></form></div></div></section>
+<section class="shell how" id="how"><h2>Simple from the first click.</h2><p>You send the request. We organize the research.</p><div class="steps"><div class="step"><span class="num">1</span><h3>Send the product</h3><p>Name, photo, part number or link.</p></div><div class="step"><span class="num">2</span><h3>Set quantity</h3><p>Tell us how many and where it needs to go.</p></div><div class="step"><span class="num">3</span><h3>We research</h3><p>Supplier fit, MOQ, pricing and key questions.</p></div><div class="step"><span class="num">4</span><h3>You decide</h3><p>You review the options before any purchase.</p></div></div></section>
+<section class="gallery" id="ideas"><div class="shell galleryhead"><h2>Almost anything worth sourcing.</h2><p>Different categories, different suppliers, one simple request.</p></div><div class="lane"><div class="track" style="--img:url('"+hero_uri+"')"><div class="tile p1" style="background-image:var(--img)"><b>Motorcycle parts</b></div><div class="tile p2" style="background-image:var(--img)"><b>Motorcycles & accessories</b></div><div class="tile p3" style="background-image:var(--img)"><b>Phones & mobile</b></div><div class="tile p4" style="background-image:var(--img)"><b>Power tools</b></div><div class="tile p5" style="background-image:var(--img)"><b>Electronics</b></div><div class="tile p6" style="background-image:var(--img)"><b>Workshop equipment</b></div><div class="tile p1" style="background-image:var(--img)"><b>Motorcycle parts</b></div><div class="tile p2" style="background-image:var(--img)"><b>Motorcycles & accessories</b></div><div class="tile p3" style="background-image:var(--img)"><b>Phones & mobile</b></div><div class="tile p4" style="background-image:var(--img)"><b>Power tools</b></div><div class="tile p5" style="background-image:var(--img)"><b>Electronics</b></div><div class="tile p6" style="background-image:var(--img)"><b>Workshop equipment</b></div></div></div><div class="lane reverse"><div class="track" style="--img:url('"+hero_uri+"')"><div class="tile p7" style="background-image:var(--img)"><b>Car accessories</b></div><div class="tile p8" style="background-image:var(--img)"><b>Home products</b></div><div class="tile p5" style="background-image:var(--img)"><b>Smart accessories</b></div><div class="tile p4" style="background-image:var(--img)"><b>Hand tools</b></div><div class="tile p2" style="background-image:var(--img)"><b>Riding gear</b></div><div class="tile p3" style="background-image:var(--img)"><b>Online-selling products</b></div><div class="tile p7" style="background-image:var(--img)"><b>Car accessories</b></div><div class="tile p8" style="background-image:var(--img)"><b>Home products</b></div><div class="tile p5" style="background-image:var(--img)"><b>Smart accessories</b></div><div class="tile p4" style="background-image:var(--img)"><b>Hand tools</b></div><div class="tile p2" style="background-image:var(--img)"><b>Riding gear</b></div><div class="tile p3" style="background-image:var(--img)"><b>Online-selling products</b></div></div></div></section>
+<section class="shell trust"><div><h2>Research first. Purchase second.</h2><p>CedarPin is an independent product-sourcing research service. We help organize supplier options and information; we are not the factory, freight forwarder or customs broker.</p></div><ul><li>Compare MOQ and price ranges</li><li>Flag missing supplier information</li><li>Organize specs and shipping questions</li><li>No purchase without your decision</li></ul></section>
+</main><footer class="shell"><span>CedarPin Product Sourcing</span><span>Independent sourcing research · International</span></footer><div class="mobilebar"><a href="#request">Start product request</a></div><script>document.getElementById('sourcingForm').addEventListener('submit',function(e){e.preventDefault();if(!this.reportValidity())return;document.getElementById('success').style.display='block';});</script></body></html>
