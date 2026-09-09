@@ -46,6 +46,10 @@ module.exports = async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
 
   if (req.method === "GET") {
+    if (req.query.health === "1") {
+      return res.status(200).json({ ok: true, verifyTokenConfigured: Boolean(process.env.WHATSAPP_VERIFY_TOKEN) });
+    }
+
     const mode = req.query["hub.mode"];
     const token = req.query["hub.verify_token"];
     const challenge = req.query["hub.challenge"];
